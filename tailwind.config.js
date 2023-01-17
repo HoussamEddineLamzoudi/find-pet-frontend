@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     colors: {
       // Configure your color palette here
-      'primary': '#faa500'
+      // 'primary': '#faa500'
     },
     extend: {},
   },

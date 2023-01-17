@@ -1,7 +1,7 @@
 import { AuthRequest } from './../interface/auth-request';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs'
+import { Observable, switchMap } from 'rxjs'
 
 
 @Injectable({
