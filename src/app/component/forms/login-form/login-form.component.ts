@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { AuthRequest } from 'src/app/core/interface/auth-request';
 
 @Component({
   selector: 'app-login-form',
@@ -7,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class LoginFormComponent {
 
+  loginEmail: string = '';
+  loginPassword: string = '';
+
+  @Output() authEmitter: EventEmitter<AuthRequest> = new EventEmitter();
+
+  public onSubmit():void {
+    console.log("onSubmit");
+    const authRequest: AuthRequest = {
+      "email" : this.loginEmail,
+      "password" : this.loginPassword
+    }
+    console.log(authRequest);
+    this.authEmitter.emit(authRequest)
+  }
 }

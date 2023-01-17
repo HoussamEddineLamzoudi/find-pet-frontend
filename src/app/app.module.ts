@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 //import
 import {CoreModule} from './core/core.module'
+import {FormsModule} from '@angular/forms'
 
 //import component :
 import { NavbarComponent } from './component/navbar/navbar.component';
@@ -22,12 +23,12 @@ import { ButtonComponent } from './component/utils/button/button.component';
     LoginFormComponent,
     LoginPageComponent,
     ButtonComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,7 @@
     <img class="h-[100%]" src="assets/imgs/Dog_and_cat_GOV.UK.jpg" alt="">
   </div>
 <div class="w-2/4 ">
-    <app-login-form></app-login-form>
+    <app-login-form (authEmitter)="login($event)"></app-login-form>
   </div>
 </div>
 
